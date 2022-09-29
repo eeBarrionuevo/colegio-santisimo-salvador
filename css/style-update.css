@@ -1,0 +1,87 @@
+
+:root {
+    --primary-color: #00A6EF;
+    --secondary-color: #0060A7;
+    --thirty-color: #9DCFEA;
+
+}
+
+
+.text-primary{
+    color: var(--primary-color) !important;
+}
+
+
+.img-logo{
+    max-width: 50%;
+}
+
+.service-item{
+   border-radius: 14px; 
+   background: white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover {
+    background: var(--primary-color);
+}
+
+
+.testimonial-item-img{
+
+    height: 100px;
+    width: 80% !important;
+    object-fit: contain;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text{
+    border-radius: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.course-item{
+    border-radius: 14px; 
+    background: white !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.pilares-img{
+    border-radius: 14px;
+}
+
+.position-relative{
+    border-radius: 14px;
+}
+
+.bg-light{
+    background-color: white !important;
+}
+
+.team-item{
+    /* border-radius: 14px; 
+    background: white !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.05); */
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-update{
+    background-color: var(--primary-color) !important;
+    border-radius: 14px !important;
+}
+
+
+
+
+
+/* .navbar-light .navbar-brand, .navbar-light a.btn {
+    height: 120px;
+} */
