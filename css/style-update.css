@@ -47,6 +47,9 @@
 
 .pilares-img{
     border-radius: 14px;
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .position-relative{
@@ -79,7 +82,9 @@
 }
 
 
-
+.img-logo-footer{
+    height: 180px;
+}
 
 
 .navbar-light .navbar-brand, .navbar-light a.btn {
