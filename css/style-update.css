@@ -87,6 +87,34 @@
 }
 
 
+table, th, td{
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  border: 1px solid #1b1b1b1c;
+}
+
+th, td {
+  padding: 1em;
+  
+}
+
+.table-info{
+    border-collapse: collapse;
+    margin: 10px 0;
+    min-width: 400px;
+    border-radius: 14px !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.row-vacantes{
+  text-align: -webkit-center;
+}
+
+
+
+
+
 
 
 
