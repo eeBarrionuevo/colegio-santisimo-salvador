@@ -419,10 +419,13 @@
     padding: 25px 0;
     font-size: 15px;
     border-top: 1px solid rgba(256, 256, 256, .1);
+    text-align: center;
+    
 }
 
 .footer .copyright a {
     color: var(--light);
+    text-align: center;
 }
 
 .footer .footer-menu a {
@@ -439,6 +442,9 @@
 
 .text-justify {
     text-align: justify;
+}
+.text-center{
+    text-align: center;
 }
 .text-celda{
     text-align: center;
