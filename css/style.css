@@ -204,7 +204,7 @@
     background: linear-gradient(rgba(24, 29, 56, .1), rgba(24, 29, 56, .1)), url(../img/portada-pag.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .page-header-inner {
