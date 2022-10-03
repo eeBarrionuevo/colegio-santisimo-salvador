@@ -6,6 +6,8 @@
     --dark: #181d38;
 }
 
+
+
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -36,6 +38,7 @@
     visibility: visible;
     opacity: 1;
 }
+
 
 
 /*** Button ***/
@@ -451,6 +454,23 @@ table {
     text-align: center;
   }
 
+  .bmodal {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+}
 
+.banner {
+    position: absolute;
+   
+    margin: auto;
+    width: 50%;
+    height: 50%;
+}
   
 
