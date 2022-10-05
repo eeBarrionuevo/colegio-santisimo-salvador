@@ -479,4 +479,6 @@ table {
     height: 50%;
 }
   
-
+.container-fluid{
+   /*height: 200px !important;*/
+}
