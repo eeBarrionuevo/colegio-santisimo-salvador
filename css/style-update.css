@@ -13,7 +13,7 @@
 
 
 .img-logo{
-    max-width: 50%;
+    max-width: 34%;
 }
 
 .service-item{
@@ -479,4 +479,14 @@ th, td {
   .show-video-modal .video-modal-content {
       transform: translate(0%,0%);
       -webkit-transform: translate(0%,0%);
+  }
+
+
+
+
+
+
+  .owl-carousel .owl-item img{
+    max-height: 800px !important;
+    object-fit: cover;
   }
