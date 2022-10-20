@@ -11,6 +11,9 @@
     color: var(--primary-color) !important;
 }
 
+.iconos-color{
+  color:#FFFFFF
+}
 
 .img-logo{
   width: 100%;
@@ -79,8 +82,9 @@
 }
 
 .btn-update{
-    background-color: var(--primary-color) !important;
+    background-color: #ffc478 !important;
     border-radius: 14px !important;
+    
 }
 
 .btn-sieweb{

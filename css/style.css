@@ -50,7 +50,8 @@
 
 .btn.btn-primary,
 .btn.btn-secondary {
-    color: #FFFFFF;
+    color: #000;
+    font-weight: bold;
 }
 
 .btn-square {
@@ -117,7 +118,7 @@
 
 .navbar-light .navbar-brand,
 .navbar-light a.btn {
-    height: 75px;
+    /*height: 75px;*/
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -478,4 +479,40 @@ table {
   
 .container-fluid{
    /*height: 200px !important;*/
+}
+
+.animacionTexto{
+
+    
+        color:#000000;
+        font-family:Consolas,monospace;
+        position:relative;
+        float:left;
+        font-size:150%;
+    
+    
+    @keyframes parpadeo{
+        from, to{border-color:transparent}
+        50%{border-color:#FFFFFF}
+    }
+    @keyframes escribiendo{
+        from{width:100%}
+        to{width:0}
+    }
+    
+    
+        position:absolute;
+        top:0;
+        right:0;
+        width:0;
+        background-color:#FFFFFF;
+        border-left: .1em solid #FFFFFF;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        animation: escribiendo 5s steps(36, end), parpadeo 1s step-end infinite;
+        -webkit-animation: escribiendo 5s steps(36, end), parpadeo 1s step-end infinite;
+        -moz-animation: escribiendo 5s steps(36, end), parpadeo 1s step-end infinite;
+    
+
 }
