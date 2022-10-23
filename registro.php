@@ -24,4 +24,5 @@ $para = 'roviedo@santisimosalvador.edu.pe';
 $asunto = 'Mensaje de... (Escribe como quieres que se vea el remitente de tu correo)';
 
 mail($para, $asunto, utf8_decode($message), $header);
+echo('correo enviado');
 ?>
