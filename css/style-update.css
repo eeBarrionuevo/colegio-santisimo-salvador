@@ -495,7 +495,10 @@ th, td {
       -webkit-transform: translate(0%,0%);
   }
 
-
+.box{
+  height: 500;
+  width: cover;
+}
 
 
 
