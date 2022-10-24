@@ -73,7 +73,7 @@
 
 .btn-primary{
     background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    border-color: #ffffff !important;
 }
 
 .btn-primary:hover{
@@ -82,7 +82,7 @@
 }
 
 .btn-update{
-    background-color: #ffc478 !important;
+    background-color: #0075c2 !important;
     border-radius: 14px !important;
     
 }
