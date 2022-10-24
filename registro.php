@@ -1,21 +1,29 @@
 <?php
-$nombre = $_POST['Nombres'];
-$correo = $_POST['Correo'];
-$telefono = $_POST['Telefono'];
-$asunto = $_POST['Asunto'];
-$mensaje = $_POST['Mensaje'];
 
+$conex = mysqli_connect("localhost","santisi1","S4lv4d0r_2022_WEB","santisi1_contactoBD"); 
 
-/*$con = mysqli_connect("localhost","tu_usuario_de_basededatos_de_localhost",
-" tu_contraseña_de_basededatos_de_localhost","tu_basededatos_de_localhost");*/
+if (isset($_POST['enviar'])) {
+    if (strlen($_POST['Nombres']) >= 1 && 
+        strlen($_POST['Correo']) >= 1 && 
+        strlen($_POST['Telefono']) >= 1 && 
+        strlen($_POST['Asunto']) >= 1) && 
+        strlen($_POST['Mensaje']) >= 1 {
 
+	    $nombre = trim($_POST['Nombres']);
+	    $correo = trim($_POST['Correo']);
+        $telefono = trim($_POST['Telefono']);
+        $asunto = trim($_POST['Asunto']);
+        $mensaje = trim($_POST['Mensaje']);
+	    $fechareg = date("d/m/y");
 
-   
-	$mensaje = "Nombre: ".$nombre."<br> Email: $correo<br> Mensaje:".$_POST['Mensaje'];
+	    $consulta = "INSERT INTO contacto(nombre, correo, telefono, asunto, mensaje, fecha) 
+        VALUES ('$nombre','$correo','$telefono','$asunto','$mensaje',$fechareg)";
+	    
+        $resultado = mysqli_query($conex,$consulta);
+	    
+    }
+}
 
-
-	if(mail('roviedo@santisimosalvador.edu.pe', $asunto, $mensaje)){
-		echo "Correo enviado";
-	}
+header("Location:contacto.html");
 
 ?>
