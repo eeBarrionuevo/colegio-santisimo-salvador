@@ -1,61 +1,165 @@
 /********** Template CSS **********/
-.box1 {
-    height: 550px;
-    padding: 50px 0;
-    flex: 1 1 0px;
-    width: 16.6%;
-    min-height: 100px;
-    transition: flex 1s;
-    position: relative;
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
 }
 
 
-    .box1-expand .box1:nth-child(1){
-    background-color: #2655A5;
-    }
-     .box1-expand .box1:nth-child(1):hover{
-    background-color: #CB4844;
-    }
-    .box1-expand .box1:nth-child(2){
-        background-color: #2655A5;
-    }
-    .box1-expand .box1:nth-child(2):hover{
-        background-color: #CB4844;
-    }
-    .box1-expand .box1:nth-child(3){
-        background-color: #1B4A99;
-      }
-      .box1-expand .box1:nth-child(3):hover{
-        background-color: #CB4844;
-      }
-      .box1-expand .box1:nth-child(4){
-        background-color: #0D3A85;
-      }
-      .box1-expand .box1:nth-child(4):hover{
-        background-color: #CB4844;
-      }
-      .box1-expand .box1:nth-child(5){
-        background-color: #083074;
-      }
-      .box1-expand .box1:nth-child(5):hover{
-        background-color: #CB4844;
-      }
-      .box1-expand .box1:nth-child(6){
-        background-color: #052763;
-      }
-      .box1-expand .box1:nth-child(6):hover{
-        background-color: #CB4844;}
 
-        .box1-expand {
-            width: 100%;
-            /* color: white; */
-            display: flex;
-            padding: 0;
-            position: relative;
-            /* flex-direction: column; */
-        }
+.boxAdm-expand {
+  width: 100%;
+  /* color: white; */
+  display: flex;
+  padding: 0;
+  position: relative;
+  /* flex-direction: column; */
+}
 
+.boxAdm-expand .boxAdm:nth-child(1) {
+  background-color: #2655A5;
+}
 
+.boxAdm-expand .boxAdm:nth-child(1):hover {
+  background-color: #CB4844;
+}
 
+.boxAdm-expand .boxAdm:nth-child(2) {
+  background-color: #2655A5;
+}
 
+.boxAdm-expand .boxAdm:nth-child(2):hover {
+  background-color: #CB4844;
+}
+
+.boxAdm-expand .boxAdm:nth-child(3) {
+  background-color: #1B4A99;
+}
+
+.boxAdm-expand .boxAdm:nth-child(3):hover {
+  background-color: #CB4844;
+}
+
+.boxAdm-expand .boxAdm:nth-child(4) {
+  background-color: #0D3A85;
+}
+
+.boxAdm-expand .boxAdm:nth-child(4):hover {
+  background-color: #CB4844;
+}
+
+.boxAdm-expand .boxAdm:nth-child(5) {
+  background-color: #083074;
+}
+
+.boxAdm-expand .boxAdm:nth-child(5):hover {
+  background-color: #CB4844;
+}
+
+.boxAdm-expand .boxAdm:nth-child(6) {
+  background-color: #052763;
+}
+
+.boxAdm-expand .boxAdm:nth-child(6):hover {
+  background-color: #CB4844;
+}
+
+.boxAdm{
+  height: 550px;
+  padding: 50px 0;
+  flex: 1 1 0px;
+  width: 16.6%;
+  min-height: 100px;
+  transition: flex 1s;
+  position: relative;
+}
+
+.inner-boxAdm {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 20px;
+  padding-top: 2vh;
+  justify-content: flex-start;
+}
+
+.inner-boxAdm .imgad {
+  width: 130px;
+  /* height: 150px; */
+  transition: width 1s;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.imgad img{
+  width: 100%;
+}
+
+.inner-boxAdm {
+  padding: 0 20px;
+}
+
+.inner-boxAdm h2, .inner-boxAdm p{
+  font-size: 16px;
+  font-weight: lighter;
+  z-index: 1;
+}
+
+.inner-boxAdm h3{
+  font-weight: bold;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.boxAdm:hover {
+  flex: 2;
+  /* min-height: 300px; */
+}
+
+.boxAdm .text-boxAdm{
+  display: none;
+}
+
+.hover-boxAdm .imgad {
+  width: 90px;
+}
+
+.hover-boxAdm h3{
+  display:none;
+}
+
+p.titulo-boxAdm{
+  font-size:19px !important;font-weight: bold;
+}
+
+.text-boxAdm p{
+  color:#fff;
+  font-size: 15px;
+}
+
+.relative{
+  position: relative;
+}
+.relative .text-boxAdm{
+  position: absolute;
+  width: 280px;
+}
+
+.boxAdm:hover .text-boxadm, .boxAdm:hover .overlay{
+  display: block;
+  /*padding: 10px 20px;*/
+}
+.overlay{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:  #CB4844;
+  opacity: .7;
+  border-radius: 20px;
+}
 
