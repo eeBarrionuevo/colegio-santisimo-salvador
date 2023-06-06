@@ -594,8 +594,13 @@ ul li:nth-child(1) .barra{
     /* min-height: 300px; */
 }
 .box .text-box{
-    display: none;
+    display:none;
 }
+
+.vista{
+    display:contents;
+}
+
 .hover-box .img{
     width: 90px;
 }
@@ -633,6 +638,10 @@ p.titulo-box{
     background-color:  #CB4844;
     opacity: .7;
     border-radius: 20px;
+}
+
+.textModal{
+    color:#111 !important;
 }
 /* fin etapa*/
 
@@ -1124,6 +1133,16 @@ p.titulo-box{
         flex-direction: column;
     }
 }
+/*Preincripcion*/
+
+.espacio{
+    padding: 5%;
+}
+.text-pcenter{
+    display: inline-block;
+    color: #083074;
+    text-align: center !important;
+}
 
 /* Pie de pagina*/
 
@@ -1189,3 +1208,43 @@ p.titulo-box{
     text-align: center;
 }
 
+/*popup*/
+
+.popup { 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+#popupBody{
+    width: 46%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    margin: 20% auto;
+    transition: all 5s ease-in-out;
+}
+
+#cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+    transition: all 200ms;
+}
