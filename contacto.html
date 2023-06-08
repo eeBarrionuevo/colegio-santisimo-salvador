@@ -189,35 +189,35 @@
                         tabindex="0"></iframe>
                 </div>
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form action="registro.php" method="post">
+                    <form  id="contactForm" name="contactForm" method="post" action="">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" name="Nombres" placeholder="Your Name">
+                                    <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Your Name">
                                     <label for="name">Nombres</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" name="Correo" placeholder="Your Email">
+                                    <input type="email" class="form-control" name="correo" id="correo" placeholder="Your Email">
                                     <label for="email">Correo</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" name="Telefono" placeholder="Telefono">
+                                    <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Telefono">
                                     <label for="telefono">Telefono</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" name="Asunto" placeholder="Subject">
+                                    <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Subject">
                                     <label for="subject">Asunto</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" name="Mensaje" style="height: 150px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" name="mensaje" id="mensaje" style="height: 150px"></textarea>
                                     <label for="message">Mensaje</label>
                                 </div>
                             </div>
@@ -331,6 +331,24 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbylQYt9UjtAH-tEcD9nPlCow3KG1AAWgxobNAZr9RdMdb2hspiMMXPHxlOQXdv812lZ/exec'
+        const form = document.forms['contactForm']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                alert("Tu solicitud se registró correctamente" );
+
+            })
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
 </body>
 
 </html>
