@@ -543,7 +543,7 @@
             <!-- To make this form functional, sign up at-->
             <!-- https://startbootstrap.com/solution/contact-forms-->
             <!-- to get an API token!-->
-            <form class="espacio box-elegirnos" name="contactForm" id="contactForm" data-sb-form-api-token="API_TOKEN" method="post" action="">
+            <form class="espacio box-elegirnos" name="contactForm2" id="contactForm2" data-sb-form-api-token="API_TOKEN" method="post" action="">
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -692,7 +692,7 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbysg0BKsxXYaLS7ZNxl7-cDV1TblEkHzcewMQF6xfpTGSSzsTdmwSaYA_45KLTXRdRb/exec'
         
-        const form = document.forms['contactForm']
+        const form = document.forms['contactForm2']
       
         form.addEventListener('submit', e => {
           e.preventDefault()
@@ -704,9 +704,9 @@
             .then(() => {  window.location.reload(); })
             .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 
-      <!-- Fin Script App Google-->
+    <!-- Fin Script App Google-->
 
 
 </body>
