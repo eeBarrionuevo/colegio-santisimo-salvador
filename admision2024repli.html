@@ -543,23 +543,23 @@
             <!-- To make this form functional, sign up at-->
             <!-- https://startbootstrap.com/solution/contact-forms-->
             <!-- to get an API token!-->
-            <form class="espacio box-elegirnos" id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <form class="espacio box-elegirnos" name="contactForm" id="contactForm" data-sb-form-api-token="API_TOKEN" method="post" action="">
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
                         <div class="form-group">
                             <!-- Name input-->
-                            <input class="form-control" id="name" type="text" placeholder="Nombres y Apellidos" data-sb-validations="required" />
+                            <input class="form-control" name="nombre" id="nombre" type="text" placeholder="Nombres y Apellidos" data-sb-validations="required" />
                             <div class="invalid-feedback" data-sb-feedback="name:required">Campo obligatorio.</div>
                         </div>
                         <div class="form-group">
                             <!-- Email address input-->
-                            <input class="form-control" id="email" type="email" placeholder="Correo electronico" data-sb-validations="required,email" />
+                            <input class="form-control" name="correo" id="correo" type="email" placeholder="Correo electronico" data-sb-validations="required,email" />
                             <div class="invalid-feedback" data-sb-feedback="email:required">Campo obligatorio.</div>
                             <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                         </div>
                         <div class="form-group mb-md-0">
                             <!-- Phone number input-->
-                            <input class="form-control" id="phone" type="tel" placeholder="Telefono" data-sb-validations="required" />
+                            <input class="form-control" name="telefono" id="telefono" type="tel" placeholder="Telefono" data-sb-validations="required" />
                             <div class="invalid-feedback" data-sb-feedback="phone:required">Campo obligatorio.</div>
                         </div>
                     </div>
@@ -567,7 +567,7 @@
                     <div class="col-md-6">
                         <div class="form-group form-group-textarea mb-md-0">
                             <!-- Message input-->
-                            <textarea class="form-control" id="message"  placeholder="Asunto" data-sb-validations="required"></textarea>
+                            <textarea class="form-control"  name= "mensaje" id="mensaje"  placeholder="Asunto" data-sb-validations="required"></textarea>
                             <div class="invalid-feedback" data-sb-feedback="message:required">Campo obligatorio.</div>
                         </div>
                     </div>
@@ -593,7 +593,7 @@
                 </div>
                 <!-- Submit Button-->
                 <div class="text-center">
-                    <button class="btn btn-primary btn-xl disabled " id="submitButton" type="submit">Registrar Preinscripción
+                    <button class="btn btn-primary btn-xl " id="submitButton" type="submit">Registrar Preinscripción
                     </button>
                 </div>
             </form>
@@ -686,6 +686,28 @@
         </div>
     </div>
     <!-- Footer End -->
+
+    <!-- Script App Google-->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbysg0BKsxXYaLS7ZNxl7-cDV1TblEkHzcewMQF6xfpTGSSzsTdmwSaYA_45KLTXRdRb/exec'
+        
+        const form = document.forms['contactForm']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                alert("Tu solicitud se registró correctamente" );
+
+            })
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+      <!-- Fin Script App Google-->
+
 
 </body>
 
