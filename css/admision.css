@@ -1207,3 +1207,9 @@ p.titulo-box{
     border-top: 1px solid rgba(256, 256, 256, .1);
     text-align: center;
 }
+
+/*texto*/
+.text_modal{
+    text-align: justify;
+}
+
