@@ -214,7 +214,7 @@
                     </div>
                     <div class="img-director">
                         <div style="padding: 56.25% 0 0 0;position:relative;"><iframe
-                                src="https://www.youtube.com/embed/27Vt1KE0QWM" frameborder="0"
+                                src="https://www.youtube.com/embed/PvGFi-g7mHk" frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""
                                 style="position:absolute;top:0;left:0;width:100%;height:100%; border-radius: 20px;"
                                 title="VIDEO CORDILLERA LP.mp4" data-ready="true"></iframe></div>
@@ -231,7 +231,7 @@
                     </h3>
 
 
-                    <p>Mensaje de Ma. Edith C.
+                    <p>Religiosa Agustina Hija del Santísimo Salvador.
                     </p>
                 </div>
             </div>
@@ -311,7 +311,7 @@
                                                 <img src="./img/rayado_por_Que_elegirnos.svg" alt="">
                                             </div>
 
-                                            <p >La labor acabada con esmero y produce en nuestros alumnos un orgullo 
+                                            <p >La labor acabada con esmero produce en nuestros alumnos un orgullo 
                                                 sano, la satisfacción de la obra bien hecha, el saber que cada día alcanzan la perfección 
                                                 como seres humanos al hacer las cosas bien.</p>
                                         </div>
@@ -526,48 +526,181 @@
                 </div>
 
                 <!--Paso 01-->
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLongTitle">Convocatoria y Preinscripción</h5>
+                            <div>
+                                <h2 class="modal-title" id="exampleModalLongTitle">Convocatoria y Preinscripción</h2>
+                                <h5>Del 15 de junio al 18 de julio</h5>
+                            </div>
+                          
+
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
                         <div class="modal-body">
-                            <p class="text_modal">Te invitamos a inscribirte en el proceso de Admisión 2024 del 12 de junio al 18 de julio. Para el año 2024 contamos con vacantes para los siguientes grados:</p>
-
-                            <p class="text_modal">Inscribete en el siguiente formulario:</p>
+                            <p class="text_modal">Te invitamos a inscribirte en el proceso de Admisión 2024 del 15 de junio al 18 de julio.</p>
+                            <p class="text_modal">Para el año 2024 contamos con vacantes para los siguientes grados:</p>
+                            
+                            <div class="text-modalcabecera">
+                            <img src="img/admision24/vancantes24.PNG" alt="">
+                            </div>
+                            
+                            <p ><strong>Costos del Servicio Educativo</strong></p>
+                            
+                            <div class="text-modalcabecera">
+                            <img class="" src="img/admision24/costos.PNG" alt="">
+                            </div>
+                            <p class="text_modal"><strong>Inscribete en el siguiente formulario:</strong></p>
                             
                             <form class="espacio box-elegirnos" name="contactForm2" id="contactForm2" data-sb-form-api-token="API_TOKEN" method="post" action="">
-                                <div class="row align-items-stretch mb-5">
+                                <div class="text-modalcabecera">
+                                    <p ><strong>DATOS DEL PADRE DE FAMILIA</strong></p>
+                                </div>
+                                <div class="row ">
+                                    
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <!-- Name input-->
-                                            <input class="form-control" name="nombre" id="nombre" type="text" placeholder="Nombres y Apellidos" data-sb-validations="required" />
+                                            <!-- Name input  align-items-stretch mb-5-->
+                                            <input class="form-control" name="nombre" id="nombre" type="text" placeholder="Nombres y Apellidos del Padre/Madre" data-sb-validations="required" />
                                             <div class="invalid-feedback" data-sb-feedback="name:required">Campo obligatorio.</div>
                                         </div>
+
+                                        <div class="form-group ">
+                                            <input class="form-control" name="dni" id="dni" type="dni" placeholder="Número de DNI" data-sb-validations="required" />
+                                            <div class="invalid-feedback" data-sb-feedback="phone:required">Campo obligatorio.</div>
+                                        </div>
+                                        <div>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected="">Parentesco con el postulante</option>
+                                            <option value="1">Padre</option>
+                                            <option value="2">Madre</option>
+                                            <option value="3">Apoderado</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
                                         <div class="form-group">
                                             <!-- Email address input-->
                                             <input class="form-control" name="correo" id="correo" type="email" placeholder="Correo electronico" data-sb-validations="required,email" />
                                             <div class="invalid-feedback" data-sb-feedback="email:required">Campo obligatorio.</div>
                                             <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                                         </div>
-                                        <div class="form-group mb-md-0">
+                                        
+                                        <div class="form-group" >
                                             <!-- Phone number input-->
                                             <input class="form-control" name="telefono" id="telefono" type="tel" placeholder="Telefono" data-sb-validations="required" />
                                             <div class="invalid-feedback" data-sb-feedback="phone:required">Campo obligatorio.</div>
                                         </div>
                                     </div>
-                                    
-                                    <div class="col-md-6">
+                                    <!--<div class="col-md-6">
                                         <div class="form-group form-group-textarea mb-md-0">
-                                            <!-- Message input-->
+                                             Message input
                                             <textarea class="form-control"  name= "mensaje" id="mensaje"  placeholder="Asunto" data-sb-validations="required"></textarea>
                                             <div class="invalid-feedback" data-sb-feedback="message:required">Campo obligatorio.</div>
                                         </div>
+                                    </div>-->
+                                </div>
+
+                                <div class="text-modalcabecera">
+                                    <p ><strong>DATOS DEL POSTULANTE</strong></p>
+                                </div>
+
+                                <div class="row ">
+                                    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <!-- Name input  align-items-stretch mb-5-->
+                                            <input class="form-control" name="nombre" id="nombre" type="text" placeholder="Nombres y Apellidos del Postulante" data-sb-validations="required" />
+                                            <div class="invalid-feedback" data-sb-feedback="name:required">Campo obligatorio.</div>
+                                        </div>
+
+                                        <div class="form-group ">
+                                            <input class="form-control" name="dni" id="dni" type="dni" placeholder="Número de DNI" data-sb-validations="required" />
+                                            <div class="invalid-feedback" data-sb-feedback="phone:required">Campo obligatorio.</div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <!-- Email address input-->
+                                            <input class="form-control" name="correo" id="correo" type="email" placeholder="Fecha de nacimiento" data-sb-validations="required,email" />
+                                            <div class="invalid-feedback" data-sb-feedback="email:required">Campo obligatorio.</div>
+                                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <!-- Email address input-->
+                                            <input class="form-control" name="correo" id="correo" type="email" placeholder="Colegio de procedencia" data-sb-validations="required,email" />
+                                            <div class="invalid-feedback" data-sb-feedback="email:required">Campo obligatorio.</div>
+                                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                        </div>
+                                        
                                     </div>
+
+                                    <div class="col-md-6">
+                                        <p class="text_modal">Grado de interés:</p>
+
+                                        <div >
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                              <label class="form-check-label" for="gridCheck1">
+                                                Inicial 3 años
+                                              </label>
+                                            </div>
+                        
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                              <label class="form-check-label" for="gridCheck2">
+                                                Inicial 4 años
+                                              </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                                <label class="form-check-label" for="gridCheck2">
+                                                  Inicial 5 años
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                                <label class="form-check-label" for="gridCheck2">
+                                                  Primer grado Primaria
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                                <label class="form-check-label" for="gridCheck2">
+                                                  Cuarto grado Primaria
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                                <label class="form-check-label" for="gridCheck2">
+                                                  Primer año Secundaria
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group ">
+                                                <input class="form-control" name="otros" id="otros" type="dni" placeholder="Otros" data-sb-validations="required" />
+                                            <div class="invalid-feedback" data-sb-feedback="phone:required">Campo obligatorio.</div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    
+                                    <!--<div class="col-md-6">
+                                        <div class="form-group form-group-textarea mb-md-0">
+                                             Message input
+                                            <textarea class="form-control"  name= "mensaje" id="mensaje"  placeholder="Asunto" data-sb-validations="required"></textarea>
+                                            <div class="invalid-feedback" data-sb-feedback="message:required">Campo obligatorio.</div>
+                                        </div>
+                                    </div>-->
+
                                 </div>
                                 <!-- Submit success message-->
                                 <!---->
@@ -595,7 +728,7 @@
                                 </div>
                             </form>
 
-                            <p class="text_modal">Asi mismo con tu inscripción participarás de nuestro Open Day, en el cual podrás conocer  más de cerca nuestra propuesta educativa en compañia de nuestros docentes y directivos; asi mismo 
+                            <p class="text_modal">Con tu inscripción participarás de nuestro Open Day, en el cual podrás conocer  más de cerca nuestra propuesta educativa en compañia de nuestros docentes y directivos; ademas de 
                                 apreciar nuestras amplias instalaciones (salones, laboratorio, biblioteca, salón de teatro, sala de música, salas de cómputo, área de psicomotricidad, auditorio y capilla), donde 
                                 nuestros alumnos crecen y aprenden felices.</p>
                         </div>
@@ -608,16 +741,20 @@
                 <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLongTitle">Inscripción al Proceso de Admisión </h5>
+                        <div class="modal-header text-modalcabecera">
+                            <div>
+                                <h5 class="modal-title" id="exampleModalLongTitle">Inscripción al Proceso de Admisión </h5>
+                                <p>Del 19 al 04 de agosto</p>
+                            </div>
+                          
+
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
                         <div class="modal-body">
-                            <p class="text_modal">Del 19 al 04 de agosto a las familias interesadas recibiran via correo electronico los accesos para la plataforma de admisión, completar los datos y realizar el 
-                                pago de la CARPETA DE POSTULACIÓN S/ 290 soles (monto no reembolsable) obteniendo el 
-                                código de pago en la plataforma de admisión y realizando el abono a través de PAGOEFECTIVO.</p>
+                            <p class="text_modal">- Las familias interesadas recibiran via correo electronico los accesos para la plataforma de admisión -completar los datos en la plataforma de Admisión
+                                - realizar el pago de la CARPETA DE POSTULACIÓN</p>
 
                             <p class="text_modal">REQUISITOS DE ADMISIÓN:</p>
                                                         
@@ -656,9 +793,11 @@
                 <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLongTitle">Día Fraterno - Actividad con familias</h5>
-                          <p class="text_modal">12 de agosto</p>
+                        <div class="modal-header text-modalcabecera">
+                            <div >
+                                <h5 class="modal-title" id="exampleModalLongTitle">Día Fraterno - Actividad con familias</h5>
+                                <p >12 de agosto</p>
+                            </div>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
@@ -685,16 +824,17 @@
                 <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header text-modalcabecera">
+                        <div>
                           <h5 class="modal-title" id="exampleModalLongTitle">Entrevista y demostrando mis habilidades</h5>
-                          
+                          <p >Del 17 al 25 de agosto</p>
+                        </div>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
                         <div class="modal-body">                     
                             <p class="text_modal">Del 17 al 25 de agosto - Etapa Eliminatoria.</p>
-                            
                             <p class="text_modal">La entrevista psicopedagógica a la familia y demostración de habilidades de los estudiantes se realizarán de acuerdo a cronograma.</p>
                             
                         </div>
@@ -707,18 +847,18 @@
                 <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLongTitle">Entrevista Final</h5>
-                          
+                        <div class="modal-header text-modalcabecera">
+                            <div>
+                                <h5 class="modal-title" id="exampleModalLongTitle">Entrevista Final</h5>
+                                <p>Del 31 de agosto al 01 de setiembre</p>
+                            </div>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
                         <div class="modal-body">                     
                             <p class="text_modal">Del 31 de agosto al 01 de setiembre</p>
-                            
                             <p class="text_modal">Las familias seleccionadas de la etapa anterior participarán de una entrevistas con Madre Directora.</p>
-                            
                         </div>
                       </div>
                     </div>
@@ -729,16 +869,16 @@
                 <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLongTitle">Resultados y pago de cuota de ingreso</h5>
-                          
+                        <div class="modal-header text-modalcabecera">
+                            <div>
+                                <h5 class="modal-title" id="exampleModalLongTitle">Resultados y pago de cuota de ingreso</h5>
+                                <p>Del 04 al 08 de setiembre</p>
+                            </div>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
-                        <div class="modal-body">                     
-                            <p class="text_modal">Del 04 al 08 de setiembre.</p>
-                            
+                        <div class="modal-body"> 
                             <p class="text_modal">Las familias ingresantes recibirán por correo una carta con el resultado al proceso de admisión 2024. 
                                 De recibida la carta se tendrá un plazo de 48 horas para el pago de la cuota de ingreso, la que asciende a S/ 3 500.</p>
                             
