@@ -312,7 +312,7 @@ ul li:nth-child(1) .barra{
     background-image: url('../img/admision24/academ-2.png');
 }
 .box-bilingue .contenedor .front{
-    background-image: url('../img/admision24/taller.png');
+    background-image: url('../img/admision24/desade2.png');
 }
 
 .box-personalizada .contenedor .front{
@@ -488,7 +488,7 @@ ul li:nth-child(1) .barra{
     background-color: #F3A200;
 }
 .box-expand .box:nth-child(6){
-    background-color: #052763;
+    background-color: #00608d;
 }
 .box-expand .box:nth-child(6):hover{
     background-color: #F3A200;
@@ -1148,6 +1148,8 @@ p.titulo-box{
 
 .bg-dark {
     background-color: #0075c2 !important;
+   
+    /*background-image: url('../img/admision24/fondo-inferior.png');*/
 }
 .text-light {
     color: #F0FBFC !important;
