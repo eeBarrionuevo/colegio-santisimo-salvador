@@ -1219,8 +1219,9 @@ p.titulo-box{
 }
 
 .modal-backdrop1 {
-    /*background-color: red;*/
-    background-image: url('../img/admision24/prueba-2.png');
+    color:#fafafa;
+    background-color: #0085ff;
+    /*background-image: url('../img/admision24/prueba-2.png');*/
  }
 
 /*tabla*/
@@ -1288,3 +1289,7 @@ th, td {
 }
 
  /* fin whastapp*/
+
+ .img-logo-footer{
+    height: 280px;
+}
