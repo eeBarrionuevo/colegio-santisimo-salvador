@@ -1218,12 +1218,45 @@ p.titulo-box{
     text-align: center;
 }
 
-.row {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) / 2);
-    padding-left: calc(var(--bs-gutter-x) / 2);
-    margin-top: var(--bs-gutter-y);
+.modal-backdrop1 {
+    /*background-color: red;*/
+    background-image: url('../img/admision24/fondo-inferior.png');
+ }
+
+/*tabla*/
+.table-info{
+    background-color: #fafafa;
+    border-collapse: collapse;
+    margin: 10px 0;
+    min-width: 400px;
+    border-radius: 14px !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
+.row-vacantes{
+    text-align: -webkit-center;
+}
+
+.text-celda{
+    text-align: center;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    border: 1px solid #1b1b1b1c;
+}
+
+th, td {
+    padding: 0.5em;
+}
+
+.vli {
+    display: list-item !important;
+    text-align: left !important;
+    list-style-type: disc !important;
+    padding: 0 20px !important;
+  }
+
+/*tabla fin*/
