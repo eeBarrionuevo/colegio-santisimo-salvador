@@ -1281,7 +1281,7 @@ th, td {
 .float:hover {
 	text-decoration: none;
 	color: #25d366;
-  background-color:#fff;
+    background-color:#fff;
 }
 
 .my-float{
@@ -1299,4 +1299,8 @@ th, td {
 
  .img-logo-footer{
     height: 280px;
+}
+
+.reglon{
+    flex-wrap: wrap;
 }
