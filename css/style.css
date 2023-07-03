@@ -19,7 +19,7 @@
 .back-to-top {
     position: fixed;
     display: none;
-    right: 45px;
+    right: 15px;
     bottom: 45px;
     z-index: 99;
 }
@@ -542,4 +542,98 @@
 }
 
  /* fin whastapp*/
+
+ /* estadistica */
+
+ 
+
+ .paralax-mf {
+    position: relative;
+    padding: 3rem 0;
+  }
+
+  .counter-box {
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  @media (min-width: 577px) {
+    .counter-box {
+      margin-bottom: 1.8rem;
+    }
+  }
+  
+  .counter-ico {
+    margin-bottom: 1rem;
+  }
+  
+  .counter-ico .ico-circle {
+    height: 60px;
+    width: 60px; 
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #0078ff;
+  }
+  
+  .counter-num .counter {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+    .ico-circle {
+    transition: all 500ms ease;
+    color: #0078ff;
+    border-radius: 50%;
+        
+  }
+  
+   .ico-circle {
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ico-circle i {
+    line-height: 0;
+    font-size: 40px;
+  }
+
+  /* estadistica fin */
+
+  /*whastapp*/
+
+  .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:100px !important;
+	right: 10px !important;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+    }
+    .float:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color:#fff;
+    }
+
+    .my-float{
+	margin-top:16px;
+    }
+
+    .btn_flotante {
+    z-index:100;
+    position: fixed;
+    top: 680px;
+    right: 0px;
+    }
+
+ /* fin whastapp*/
+
+
 
