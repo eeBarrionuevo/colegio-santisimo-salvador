@@ -628,9 +628,10 @@
 
     .btn_flotante {
     z-index:100;
-    position: fixed;
-    top: 680px;
-    right: 0px;
+    position:fixed;
+    right: 8px;
+    bottom:100px;
+    font-size:135px;
     }
 
  /* fin whastapp*/

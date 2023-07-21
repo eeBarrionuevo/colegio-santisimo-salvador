@@ -211,6 +211,16 @@
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                     <form  id="contactForm" name="contactForm" method="post" action="">
                         <div class="row g-3">
+                            
+                            <script>
+                                date = new Date().toLocaleDateString();
+                                localStorage.setItem("fecha", date);
+                                window.onload = function(){
+                                    document.getElementById('fecha').value=localStorage.getItem("fecha");
+                                }
+                            </script>
+                            <input type="text" name="fecha" id="fecha" class="form-control" hidden="true" />
+
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" name="nombres" id="nombres" placeholder="Your Name">
@@ -352,6 +362,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
+   
 
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbylQYt9UjtAH-tEcD9nPlCow3KG1AAWgxobNAZr9RdMdb2hspiMMXPHxlOQXdv812lZ/exec'
